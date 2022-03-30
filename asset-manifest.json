@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/hick-hyman-law/static/js/main.8fe267d1.js",
+    "main.js": "/hick-hyman-law/static/js/main.db8c5c26.js",
     "index.html": "/hick-hyman-law/index.html",
-    "main.8fe267d1.js.map": "/hick-hyman-law/static/js/main.8fe267d1.js.map"
+    "main.db8c5c26.js.map": "/hick-hyman-law/static/js/main.db8c5c26.js.map"
   },
   "entrypoints": [
-    "static/js/main.8fe267d1.js"
+    "static/js/main.db8c5c26.js"
   ]
 }
