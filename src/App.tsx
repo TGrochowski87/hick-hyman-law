@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={getTheme(theme)}>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <GlobalStyles />
           <Toggle
             onClick={() => {
@@ -26,8 +26,8 @@ function App() {
             {theme === getTheme(theme).label ? <HiMoon size={40} /> : <CgSun size={40} />}
           </Toggle>
           <Switch>
-            <Route exact path="/" component={MainPage} />
-            <Route path="/test" component={TestPage} />
+            <Route exact path="/hick-hyman-law" component={MainPage} />
+            <Route path="/hick-hyman-law/test" component={TestPage} />
           </Switch>
         </Router>
       </ThemeProvider>
