@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HiMoon } from "react-icons/hi";
 import { CgSun } from "react-icons/cg";
 
 import GlobalStyles from "./styles/GlobalStyles";
 import { Toggle } from "./styles/App.Styles";
-import themes, { getTheme } from "./styles/Themes";
+import { getTheme } from "./styles/Themes";
 import MainPage from "./components/pages/MainPage";
 import TestPage from "./components/pages/TestPage";
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={getTheme(theme)}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <GlobalStyles />
           <Toggle
             onClick={() => {
