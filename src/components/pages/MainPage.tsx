@@ -4,7 +4,7 @@ import { MainPageStyled, CustomButton } from "../../styles/pages/MainPage.Styles
 const MainPage: React.FC = () => {
   return (
     <MainPageStyled>
-      <Link to="/test">
+      <Link to="/hick-hyman-law/test">
         <CustomButton>Start</CustomButton>
       </Link>
     </MainPageStyled>
